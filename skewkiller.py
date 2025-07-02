@@ -2,7 +2,7 @@
 """
 Single Command Time Sync and Execute
 Synchronizes system time with domain controller and immediately runs your command.
-Usage: sudo python3 sync_and_run.py <dc_ip> <command>
+Usage: sudo python3 skewkiller.py <dc_ip> <command>
 """
 
 import socket
@@ -126,7 +126,7 @@ class QuickTimeSync:
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: sudo python3 sync_and_run.py <domain_controller_ip> '<command>'")
+        print("Usage: sudo python3 skewkiller.py <domain_controller_ip> '<command>'")
         sys.exit(1)
 
     dc_ip = sys.argv[1]
