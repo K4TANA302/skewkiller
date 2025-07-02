@@ -14,6 +14,21 @@
 - Designed for Red Team / Penetration Testing / AD environments.
 
 ---
+## ✨ Key Features
+
+### 1. Time Backup & Restore
+- Saves your system’s original timestamp and timezone offset.
+- After command execution, it restores the original time, minimizing forensic artifacts or detection.
+
+### 2. NTP Time Synchronization
+- Uses raw socket communication to retrieve time from a specified NTP server (typically a Domain Controller).
+- Calculates and accounts for network latency to adjust time more accurately.
+
+### 3. Multiple Time Setting Methods
+Tries up to three methods for setting system time:
+- `settimeofday` (via `libc`)
+- `clock_settime` (via `libc`)
+- Fallback to `date` command
 
 ---
 ## Setup
