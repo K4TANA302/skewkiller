@@ -26,6 +26,8 @@
 ---
 ## Setup
 ```
+git clone https://github.com/K4TANA302/skewkiller.git
+cd skewkiller
 chmod +x skewkiller.py
 mv skewkiller.py /usr/local/bin/skewkiller
 ```
