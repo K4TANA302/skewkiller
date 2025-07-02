@@ -33,7 +33,7 @@ mv skewkiller.py /usr/local/bin/skewkiller
 
 ```bash
 
-sudo python3 skewkiller.py <domain_controller_ip> "<command>"
+sudo skewkiller  <domain_controller_ip> "<command>"
 ```
 ⚙️ How it Works
 
