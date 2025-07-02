@@ -15,14 +15,6 @@
 
 ---
 
-## 🛠️ Requirements
-
-- Python 3.x
-- Root privileges (required to change system time)
-- Linux system with:
-  - `ntpdate` (optional but preferred)
-  - `timedatectl`, `hwclock`, and `date` commands
-
 ---
 ## Setup
 ```
