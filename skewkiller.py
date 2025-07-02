@@ -249,8 +249,8 @@ def main():
     if len(sys.argv) < 3:
         print("Usage: sudo python3 custom_time_sync.py <server_ip> '<command>'")
         print("\nExamples:")
-        print("  sudo python3 custom_time_sync.py 192.168.1.10 'kinit user@DOMAIN.COM'")
-        print("  sudo python3 custom_time_sync.py 10.0.0.1 'ldapsearch -H ldap://dc.example.com'")
+        print("  sudo python3 skewkiller.py 192.168.1.10 'kinit user@DOMAIN.COM'")
+        print("  sudo python3 skewkiller.py 10.0.0.1 'ldapsearch -H ldap://dc.example.com'")
         sys.exit(1)
     
     server_ip = sys.argv[1]
